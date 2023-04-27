@@ -1,14 +1,19 @@
 class Pokemon:
     def __init__(self,name = "", hp=100, ap = 12, defense=0):
-        self.name = name
-        self.hp = hp
+        self.__name = name
+        self.__hp = hp
         self.ap = ap
         self.defense = defense
 
+    def set_hp(self,new_hp):
+        self.__hp = new_hp
+    def set_name(self,new_name):
+        self.__name = new_name
+
     def get_name(self):
-        return self.name
+        return self.__name
     def get_hp(self):
-        return self.hp
+        return self.__hp
     def get_ap(self):
         return self.ap
     def get_defense(self):

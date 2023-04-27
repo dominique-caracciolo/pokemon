@@ -7,28 +7,28 @@ class Combat:
         self.pokemon2 = pokemon2
         
     def est_en_vie(self, pokemon):
-        return pokemon.hp > 0
+        return pokemon.get_hp() > 0
         
     def verifier_fin_combat(self):
         if not self.est_en_vie(self.pokemon1):
-            return self.pokemon2.name
+            return self.pokemon2.get_name()
         elif not self.est_en_vie(self.pokemon2):
-            return self.pokemon1.name
+            return self.pokemon1.get_name()
         else:
             return None
         
     def attaquer(self, attaquant, defenseur):
         if random.randint(0, 1) == 1:
-            degats = attaquant.ap - defenseur.defense
+            degats = attaquant.get_ap() - defenseur.get_defense()
             if degats < 0:
                 degats = 0
-            defenseur.hp -= degats
-            print(f"{attaquant.name} attaque {defenseur.name} et inflige {degats} points de dégâts.")
+            defenseur.set_hp(defenseur.get_hp() - degats)
+            print(f"{attaquant.get_name()} attaque {defenseur.get_name()} et inflige {degats} points de dégâts.")
         else:
-            print(f"{attaquant.name} rate son attaque.")
+            print(f"{attaquant.get_name()} rate son attaque.")
 
-pikachu = Pokemon("Pikachu", 50, 10, 5)
-bulbizarre = Pokemon("Bulbizarre", 60, 8, 7)
+pikachu = Pokemon("Pikachu", 100, 10, 5)
+bulbizarre = Pokemon("Bulbizarre", 100, 8, 7)
 combat = Combat(pikachu, bulbizarre)
 
 while True:
