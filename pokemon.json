@@ -1,0 +1,26 @@
+[
+    {
+        "_Pokemon__name": "Pikachu",
+        "_Pokemon__hp": 100,
+        "ap": 15,
+        "defense": 4
+    },
+    {
+        "_Pokemon__name": "Salameche",
+        "_Pokemon__hp": 100,
+        "ap": 16,
+        "defense": 6
+    },
+    {
+        "_Pokemon__name": "Mew",
+        "_Pokemon__hp": 199,
+        "ap": 200,
+        "defense": 55
+    },
+    {
+        "_Pokemon__name": "Pikachu",
+        "_Pokemon__hp": 100,
+        "ap": 22,
+        "defense": 15
+    }
+]

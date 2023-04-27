@@ -1,5 +1,6 @@
+import json
 class Pokemon:
-    def __init__(self,name = "", hp=100, ap = 12, defense=0):
+    def __init__(self,name = "", hp=100, ap = 0, defense=0):
         self.__name = name
         self.__hp = hp
         self.ap = ap
@@ -20,12 +21,18 @@ class Pokemon:
         return self.defense
 
     def showinf(self):
-        print(self.get_name())
-        print(self.get_hp())
-        print(self.get_ap())
-        print(self.get_defense())
+        print("Nom =",self.get_name())
+        print("Vie =",self.get_hp())
+        print("Puissance d'attaque =",self.get_ap())
+        print("deffence = ",self.get_defense())
+
+# def add_pokemon():
+#     with open("pokemon.json", "r") as f:
+#         data = json.load(f)
+
+
+
 
 pokemon = Pokemon()
-
 
 
