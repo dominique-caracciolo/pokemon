@@ -9,5 +9,5 @@ class TypeTerre(Pokemon):
         self.defense = 15
 
 
-feu = TypeTerre()
-feu.showinf()
+terre = TypeTerre()
+terre.showinf()

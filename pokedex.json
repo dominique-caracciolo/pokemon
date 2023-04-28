@@ -1,0 +1,16 @@
+[
+    {
+        "nom": "Sablette",
+        "hp": 100,
+        "ap": 20,
+        "defense": 10,
+        "type": "Terre"
+    },
+    {
+        "nom": "Salameche",
+        "hp": 100,
+        "ap": 20,
+        "defense": 10,
+        "type": "Feu"
+    }
+]

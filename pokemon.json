@@ -2,25 +2,29 @@
     {
         "_Pokemon__name": "Pikachu",
         "_Pokemon__hp": 100,
-        "ap": 15,
-        "defense": 4
+        "ap": 20,
+        "defense": 10,
+        "type": "Electrique"
+    },
+    {
+        "_Pokemon__name": "Carapuce",
+        "_Pokemon__hp": 100,
+        "ap": 20,
+        "defense": 10,
+        "type": "Eau"
+    },
+    {
+        "_Pokemon__name": "Sablette",
+        "_Pokemon__hp": 100,
+        "ap": 20,
+        "defense": 10,
+        "type": "Terre"
     },
     {
         "_Pokemon__name": "Salameche",
         "_Pokemon__hp": 100,
-        "ap": 16,
-        "defense": 6
-    },
-    {
-        "_Pokemon__name": "Mew",
-        "_Pokemon__hp": 199,
-        "ap": 200,
-        "defense": 55
-    },
-    {
-        "_Pokemon__name": "Pikachu",
-        "_Pokemon__hp": 100,
-        "ap": 22,
-        "defense": 15
+        "ap": 20,
+        "defense": 10,
+        "type": "Feu"
     }
 ]

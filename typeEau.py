@@ -9,5 +9,5 @@ class TypeEau(Pokemon):
         self.defense = 13
 
 
-feu = TypeEau()
-feu.showinf()
+eau = TypeEau()
+eau.showinf()

@@ -1,5 +1,6 @@
 import random
 from pokemon import Pokemon
+import json
 
 
 class Combat:
@@ -28,13 +29,25 @@ class Combat:
         else:
             print(f"{attaquant.get_name()} rate son attaque.")
 
+
+
+
+def enlever_points_de_vie(self, pokemon, degats):
+        pokemon.set_hp(pokemon.get_hp() - degats)
+        
+def enregistrer_pokemon(self, pokemon):
+        self.pokemon_rencontres.append(pokemon)
+        with open("pokedex.json", "w") as f:
+            json.dump([p.as_dict() for p in self.pokemon_rencontres], f)
+
+
 pikachu = Pokemon("Pikachu", 100, 10, 5)
 bulbizarre = Pokemon("Bulbizarre", 100, 8, 7)
 combat = Combat(pikachu, bulbizarre)
 
-while True:
-    if combat.verifier_fin_combat():
-        print(f"{combat.verifier_fin_combat()} remporte le combat !")
-        break
-    combat.attaquer(pikachu, bulbizarre)
-    combat.attaquer(bulbizarre, pikachu)
+# while True:
+#     if combat.verifier_fin_combat():
+#         print(f"{combat.verifier_fin_combat()} remporte le combat !")
+#         break
+#     combat.attaquer(pikachu, bulbizarre)
+#     combat.attaquer(bulbizarre, pikachu)
